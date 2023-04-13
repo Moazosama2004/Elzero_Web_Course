@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Assignment 1 -->
+    <form action="" method="get">
+        <div>
+            <label for="us">Username</label>
+            <input type="text" id="us" autofocus minlength="5" maxlength="20" required name="username">
+        </div>
+        <br>
+        <div>
+            <label for="em">Email</label>
+            <input type="text" id="em" value="o@o.com" readonly name="email">
+        </div>
+        <br>
+        <div>
+            <label for="tk">Token</label>
+            <input type="text" id="tk" value="b92f1fc2fce391ad7af633723afd3055" hidden name="token">
+        </div>
+        <br>
+        <input type="reset" value="Empty">
+        <input type="submit" value="Send">
+        <hr>
+        <!-- Assignment 2 -->
+        <div>
+            <input type="checkbox" id="ps" name="skill" checked>
+            <label for="ps">Problem Solving</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lt" name="skill">
+            <label for="lt">Logical Thinking</label>
+        </div>
+        <div>
+            <input type="checkbox" id="as" name="skill">
+            <label for="as">Advanced Search</label>
+        </div>
+        <div>
+            <input type="checkbox" id="ana" name="skill">
+            <label for="ana">Analysis</label>
+        </div>
+        <div>
+            <input type="checkbox" id="plan" name="skill">
+            <label for="plan">Planning</label>
+        </div>
+        <hr>
+        <div>
+            <input type="radio" id="fd" name="job" checked>
+            <label for="fd">Front-End Developer</label>
+        </div>
+        <div>
+            <input type="radio" id="bd" name="job">
+            <label for="bd">Back-End Developer</label>
+        </div>
+        <div>
+            <input type="radio" id="ba" name="job">
+            <label for="ba">Business Analyst</label>
+        </div>
+        <div>
+            <input type="radio" id="pm" name="job">
+            <label for="pm">Project Manager</label>
+        </div>
+        <div>
+            <input type="radio" id="sm" name="job">
+            <label for="sm">Scrum Master</label>
+        </div>
+        <hr>
+        <!-- Assignment 3 -->
+        <label for="prolang">Chosse Programming Language v:</label>
+        <select name="Version" id="prolang">
+            <optgroup label="PHP">
+                <option value="1">v5.0</option>
+                <option value="2">v7.0</option>
+                <option value="3">v8.0</option>
+            </optgroup>
+            <optgroup label="Python">
+                <option value="4">v2.0</option>
+                <option value="5">v3.0</option>
+                <option value="6">v3.9</option>
+            </optgroup>
+        </select>
+        <hr>
+        <textarea name="brief" cols="40" rows="10" >Write Here Why You Want To Learn Programming</textarea>
+    </form>
+</body>
+</html>
