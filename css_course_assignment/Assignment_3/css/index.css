@@ -1,0 +1,52 @@
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 div {
+    display: inline-block;
+    background-color: #eee;
+    outline: 5px black solid;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.container-1 .shape1 {
+    border: 5px red solid;
+}
+
+.container-1 .shape2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green;
+}
+
+.container-1 .shape3 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 div {
+    background-color: #eee;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+.container-2 .shape1 {
+    outline: 12px solid #eee;
+    border-left: 6px solid #e91e63;
+}
+
+.container-2 .shape2 {
+    visibility: hidden;
+}
+
+.container-2 .shape3 {
+    outline: 12px solid #eee;
+    border-left: 6px solid #009688;
+}

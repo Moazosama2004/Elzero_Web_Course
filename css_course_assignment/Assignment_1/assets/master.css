@@ -1,0 +1,112 @@
+/************************/
+/*      Assignment 1    */
+/************************/
+
+/* 
+.title {
+    : Any Element With Class Title
+} 
+*/ 
+
+/* 
+#nav {
+    : Any Element With Id nav
+} 
+*/
+
+/* 
+div {
+    : mean all element of type =>  div 
+} 
+*/
+
+/* 
+h2 {
+    : mean all element of type =>  div 
+} 
+*/
+
+/************************/
+/*      Assignment 5   */
+/************************/
+
+/* 
+    ._user-name {
+            => valid
+    }  
+*/
+
+/*
+    .-user-name {
+            => valid
+    } 
+*/
+
+/*  
+    .-user-name {
+            => valid 
+} 
+*/
+
+/*
+    .1user-name {
+            => Not valid
+} 
+*/
+
+/* 
+    .@user-name {
+            => Not valid  
+}  
+*/
+
+/*
+    .user@name {
+            => valid 
+} 
+*/
+
+/* 
+._user10name {
+            => valid 
+}  
+*/
+
+/*
+    .u {
+            => valid 
+} 
+*/
+/************************/
+/*      Assignment 6    */
+/************************/
+
+/* 
+.USERNAME {
+    => Bad
+} 
+*/
+
+/* 
+.UserName {
+    => Bad
+} 
+*/
+
+/* 
+.user-name {
+    => Good
+} 
+*/
+
+/* 
+.userName {
+    => Bad
+} 
+*/
+
+/* 
+.usernameprofile {
+    => Bad
+} 
+*/
