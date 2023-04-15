@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 div {
+    text-transform: capitalize;
+    font-weight: 500;
+    text-shadow: 1px 1px 0 rgb(244 67 54)
+                ,2px 2px 0 rgb(33 150 243)
+                ,3px 3px 0 rgb(156 39 176);    
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 .one {
+    text-transform: uppercase;
+}
+
+.container-2 .two {
+    text-transform: capitalize;
+}
+
+.container-2 .three {
+    text-transform: lowercase;
+}
+
+.container-2 .one ,
+.container-2 .two ,
+.container-2 .three {
+    text-align: center;
+    font-weight: 500;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+
+.container-3 .one ,
+.container-3 .two ,
+.container-3 .three {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.container-3 .two {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.container-3 .three {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container-3 .three:hover {
+    overflow: visible;
+}   
+
+/****************/
+/* Assignment 3 */
+/****************/
+.container-4 .cont {
+    margin: 50px auto;
+    text-align: center;
+}
+.container-4 a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0 150 136);
+    padding: 15px;
+    border-bottom: 10px solid rgb(0 81 74);
+}
+
+
+
