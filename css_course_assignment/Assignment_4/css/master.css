@@ -1,0 +1,32 @@
+/****************/
+/* Assignment 1 */
+/****************/
+
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.parent p ,
+div.title {
+    color: green;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container div {
+    background-color: rgb(165 42 42);
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    text-transform: capitalize;
+    width: 400px;
+    height: 20px;
+    overflow: hidden;
+}
+
