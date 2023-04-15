@@ -1,0 +1,73 @@
+/****************/
+/* Assignment 1 */
+/****************/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-1 .parent {
+    width: 1000px;
+    background-color: #eee;
+    margin: auto;
+    float: left;
+
+}
+
+.container-1 .parent .one {
+    width: calc((100% - 30px));
+}
+
+.container-1 .parent .two div  {
+    width: calc((100% - 60px) / 3);
+}
+
+.container-1 .parent .three div  {
+    width: calc((100% - 45px) / 2);
+}
+
+.container-1 .parent .four div  {
+    width: calc((100% - 75px) / 4);
+}
+
+.container-1 .parent .one  ,
+.container-1 .parent .two div ,
+.container-1 .parent .three div ,
+.container-1 .parent .four div  {
+    margin: 10px 0;
+    padding: 15px 0;
+    background-color: #ccc;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 15px;
+    float: left;
+}
+.clear { 
+    clear: both;
+} 
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(204, 204, 204);
+    color : black;
+}
+
+.container-2 .one {
+    background-color: rgb(204 204 204 / 0.2);
+}
+
+.container-2 .two {
+    opacity: 0.1;
+}
+
+
+
