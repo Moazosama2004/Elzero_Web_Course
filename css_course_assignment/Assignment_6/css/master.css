@@ -1,0 +1,77 @@
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 {
+    padding: 20px;
+    margin: 20px auto;
+    width: 600px;
+    border: 5px solid rgb(192, 34, 255);
+
+}
+
+.container-1 p {
+    background-color: #eee;
+    width: 400px;
+    margin: inherit;
+    text-align: center;
+    padding: inherit;
+    border: inherit;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 .one {
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-2 .two {
+    font-size: larger;
+    font-family: 'Cairo', sans-serif;
+
+}
+
+.container-2 .three {
+    font-size: smaller;
+    font-weight: bold;
+    font-family: 'Jomhuria', cursive;
+}
+
+.container-2 .one ,
+.container-2 .two ,
+.container-2 .three {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+html {
+    font-size: 20px;
+}
+
+.container-3 .one {
+    font-size: 2.5rem;
+}
+
+.container-3 .two {
+    font-size: 2rem;
+}
+.container-3 .three {
+    font-size: 1.5rem;
+}
+
+.container-3 .one ,
+.container-3 .two ,
+.container-3 .three {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
