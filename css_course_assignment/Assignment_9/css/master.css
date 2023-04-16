@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/****************/
+/* Assignment 1 */
+/****************/  
+
+.container-1 div {
+    width: 300px;
+    height: 60px;
+    margin: 15px auto;
+    text-align: center;
+    line-height: 60px;
+}
+
+.one ,
+.three {
+    background-color: #eee;
+}
+
+.container-1 :empty {
+    background-color: red;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/  
+
+.container-2 div {
+    background-color: #ddd;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    margin:20px auto ;
+    letter-spacing: 1px;
+    position: relative;
+
+}
+
+.container-2 div::before {
+    content: "1";
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    margin-top: 5px;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/ 
+
+.container-3 p {
+    background-color: #eee;
+    padding: 20px;
+    border-left: 5px solid rgb(233 30 99);
+    width: 400px;
+    height: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.container-3 p::before {
+    content: attr(data-person);
+    background-color: #eee;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    padding: 10px;
+    top: 10px;
+    left: -120px;
+}
+
+.container-3 p::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -25px;
+    border: 10px solid;
+    border-color: transparent rgb(233 30 99) transparent transparent;
+
+}
+
+/****************/
+/* Assignment 4 */
+/****************/ 
+.container-4 {
+    counter-reset: count;    
+}
+.container-4 p {
+    background-color: #eee;
+    padding: 20px;
+    width: 400px;
+    height: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.container-4 p::after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: rgb(244 67 54);
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.container-4 p::before {
+    counter-increment: count;
+    content: counter(count);
+    background-color: rgb(244 67 54);
+    color: white;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+
+}
