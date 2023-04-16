@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 div {
+    counter-increment: count;
+    background-color: #ddd;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    border: 3px solid black;
+    box-shadow: -6px -3px 0 0 #e91e63 , 6px 3px 0 0 #2196f3;
+    border-radius: 50%;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container-1 div::before {
+    content: counter(count);
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    padding: 7px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container-1 div::after {
+    content: "Element";
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 div {
+    background-color: #ddd;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    box-shadow: 3px 1px 10px 3px #ccc inset;
+    border-radius: 20% 50% 20% 50%;
+    -webkit-border-radius: 20% 50% 20% 50%;
+    -moz-border-radius: 20% 50% 20% 50%;
+    -ms-border-radius: 20% 50% 20% 50%;
+    -o-border-radius: 20% 50% 20% 50%;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+ * {
+    box-sizing: border-box;
+}   
+.container-3 .parent {
+    width: 550px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+.container-3 .child {
+    background-color: #eee;
+    float: left;
+    width: calc((100% - 90px) /2);
+    height: 100%;
+    margin-left: 30px;
+}
+
+.container-3 .child .label {
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 10px;
+    width: calc((100% - 40px));
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.container-3 .child .price {
+    background-color: #ccc;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 200px;
+    height: 70%;
+    width: calc((100% - 40px));
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container-3 .parent::after {
+    content: "";
+    background-color: #03a9f4;
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}
+.container-3 .parent::before {
+    content: "Or";
+    background-color: #03a9f4;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    line-height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 262px;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
