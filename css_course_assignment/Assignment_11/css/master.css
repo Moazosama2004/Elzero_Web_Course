@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 .parent {
+    background-color: #eee;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 50px auto;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+.container-1 .parent:hover {
+    margin-top: 20px;
+}
+
+.container-1 .parent .child {
+    background-color: #ddd;
+    width: calc(100% - 80px);
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;   
+    transition-property: margin-top;
+    transition-delay: 0.5;
+    transition-duration: 1s;
+
+}
+
+.container-1 .parent .child:hover {
+    margin-top: 30px;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 div {
+    color: transparent !important;
+    background-color: #eee !important;
+    border: none !important;
+    width: 400px;
+    height: 50px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.container-2 div::after {
+    content: "elzero";
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: absolute;
+    top: 34%;
+    left: 43%;
+    text-align: center;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+.container-3 div {
+    color: var(--mainColor , red);
+    width: 400px;
+    padding: var(--mainPadding , 10px);
+    font-weight: 500;
+    margin: 20px auto;
+    border: 3px solid var(--mainColor,black);
+}
+
+
