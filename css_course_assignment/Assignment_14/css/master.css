@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 .grid {
+    counter-reset: count;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 10px 10px;
+
+
+}
+
+.container-1 .grid div {
+    background-color: #607d8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.container-1 .grid div::before {
+    content: "element";
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+}
+
+.container-1 .grid div::after {
+    counter-increment: count;
+    content: counter(count);
+    counter-increment: count;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 a {
+    text-decoration: none;
+    background-color: #279abd;
+    padding: 10px;
+    color: white;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+
+.container-3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin : 20px auto;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+}
+
+.container-3 .grid div {
+    background-color: #403f3f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************/
+/* Assignment 4 */
+/****************/
+
+.container-4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(6 , 1fr);
+    grid-template-areas:"eight eight eight" 
+                        "two two three"
+                        "four five five"
+                        "six five five"
+                        "seven five five"
+                        "one one one";
+    gap: 10px;
+
+}
+
+/* Another Solution For Assignment 4  */
+
+.container-4 .grid div {
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-4 .one {
+    grid-area: one;
+}
+.container-4 .two {
+    grid-area: two;
+}
+.container-4 .three {
+    grid-area: three;
+}
+.container-4 .four {
+    grid-area: four;
+}
+.container-4 .five {
+    grid-area: five;
+}
+.container-4 .six {
+    grid-area: six;
+}
+.container-4 .seven {
+    grid-area: seven;
+}
+.container-4 .eight {
+    grid-area: eight;
+}
+
+/* .container-4 .grid div {
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-4 .eight {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.container-4 .two {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.container-4 .three {
+    grid-area: 2 / 3 / 2 / 3;
+}
+.container-4 .four {
+    grid-area: 3 / 1 / 3 / 1;
+}
+.container-4 .six {
+    grid-area: 4 / 1 / 4 / 1;
+}
+.container-4 .seven {
+    grid-area: 5 / 1 / 5 / 1;
+}
+
+.container-4 .five {
+    grid-area: 3 / 2 / span 3 / span 2;
+}
+
+.container-4 .one {
+    grid-area: 6 / 1 / 6 / 4;
+} */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/****************/
+/* Assignment 5*/
+/****************/
+
+.container-5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    grid-template-rows: repeat(2 , auto);
+    align-content: space-between;
+    gap: 10px;
+
+}
+
+.container-5 .grid div {
+    background-color: #e91e63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************/
+/* Assignment 6 */
+/****************/
+
+.container-6 a {
+    text-decoration: none;
+    background-color: #279abd;
+    padding: 10px;
+    color: white;
+    transition: 0.5s;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container-6 a:hover ,
+.container-2 a:hover{
+    padding: 20px;
+}

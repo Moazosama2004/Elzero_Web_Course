@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 40px repeat(5, 1fr) 40px;
+    grid-template-areas: 
+    "header header header header header header header header header header"
+    "section section section section section section section aside aside aside"
+    "section section section section section section section aside aside aside"
+    "section section section section section section section aside aside aside"
+    "section section section section section section section aside aside aside"
+    "section section section section section section section aside aside aside"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+
+header {
+    background-color: #03a9f4;
+    grid-area: header;
+    position: relative;
+}
+
+header::after {
+    content: "Header";
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 25px;
+
+}
+
+section {
+    background-color: #ff5722;
+    grid-area: section;
+    position: relative;
+}
+
+section::after {
+    content: "Section";
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+
+    left: 25px;
+}
+
+aside {
+    background-color: #607d8b;
+    grid-area: aside;
+    position: relative;
+}
+
+aside::after {
+    content: "Aside";
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+
+footer {
+    background-color: #009688;
+    grid-area: footer;
+    position: relative;
+}
+
+footer::after {
+    content: "Footer";
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 25px;
+}
+
+
