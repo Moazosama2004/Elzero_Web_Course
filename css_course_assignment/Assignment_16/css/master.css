@@ -1,0 +1,224 @@
+/****************/
+/* Assignment 1 */
+/****************/
+
+.container-1 h1 {
+    background-color: #ff5722;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin: 40px auto;
+}
+
+.container-1 h1::after {
+    content: "";
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewY(15deg);
+    -webkit-transform: skewY(15deg);
+    -moz-transform: skewY(15deg);
+    -ms-transform: skewY(15deg);
+    -o-transform: skewY(15deg);
+}
+
+.container-1 h1::before {
+    content: "";
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewY(-15deg);
+    -webkit-transform: skewY(-15deg);
+    -moz-transform: skewY(-15deg);
+    -ms-transform: skewY(-15deg);
+    -o-transform: skewY(-15deg);
+}
+
+/****************/
+/* Assignment 2 */
+/****************/
+
+.container-2 h1 {
+    background-color: #009688;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 40px auto;  
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+}
+
+.container-2 h1::after {
+    content: "";
+    background-color: inherit;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: 10px;
+    height: 100%;
+    transform: skew(25deg);
+    -webkit-transform: skew(25deg);
+    -moz-transform: skew(25deg);
+    -ms-transform: skew(25deg);
+    -o-transform: skew(25deg);
+}
+
+/****************/
+/* Assignment 3 */
+/****************/
+
+/* .class {
+    matrix(3, 0.2679, 0, 3, 20, 100):;
+    scaleX => 3
+    skewY => 0.2679
+    skewX => 0 
+    scaleY => 3
+    translateX => 20
+    translateY => 100
+} */
+
+/****************/
+/* Assignment 4 */
+/****************/
+
+.container-4 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-4 div {
+    background-color: #607d8b;
+    width: 200px;
+    height: 200px;
+    border-bottom: 5px solid black;
+    position: relative;
+
+    
+}
+
+.container-4 div::before {
+    content: "";
+    background-color: black;
+    border: 3px solid white;
+    width: 69%;
+    height: 69%;
+    position: absolute;
+    top: -72%;
+    right: -2px;
+    transform-origin: bottom right;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.container-4 div::after {
+    content: "elzero";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/****************/
+/* Assignment 5 */
+/****************/
+.container-5 {
+    perspective: 500px;
+}
+
+.container-5 div {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.container-5 div::after {
+    content: "front";
+    background-color: rgb(250 54 100);
+
+
+}
+
+.container-5 .one::before {
+    content: "back";
+    background-color: rgb(22 146 252);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.container-5 .two::before {
+    content: "back";
+    background-color: rgb(22 146 252);
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+
+.container-5 div::after , 
+.container-5 div::before {
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.container-5 .one:hover {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+.container-5 .two:hover {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+}
+
+
+
